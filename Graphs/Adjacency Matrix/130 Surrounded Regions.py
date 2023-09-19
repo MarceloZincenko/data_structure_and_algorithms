@@ -1,3 +1,4 @@
+#130 Surrounded Region
 def solve(grid) -> None:
 
     visit = set()
@@ -25,7 +26,7 @@ def solve(grid) -> None:
             if grid[r][c] == "O" and (r, c) not in visit:
                 island = list()
                 res =  dfs(r, c)
-                if res == False
+                if res == False:
                     for e in island:
                         grid[e[0]][e[1]] = 'X'
     
